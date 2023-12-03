@@ -1,13 +1,8 @@
-import {
-  Links,
-  LiveReload,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
+import '@mantine/core/styles.css'
+import { MantineProvider } from '@mantine/core'
 
 export default function App() {
   return (
@@ -19,11 +14,16 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
+        <MantineProvider>
+          <div className="fixed top-0 left-0 h-full w-60 bg-blue-50"></div>
+          <main className="pl-60">
+            <Outlet />
+          </main>
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+        </MantineProvider>
       </body>
     </html>
-  );
+  )
 }
