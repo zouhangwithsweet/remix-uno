@@ -3,6 +3,7 @@ import '@unocss/reset/tailwind.css'
 import 'uno.css'
 import '@mantine/core/styles.css'
 import { MantineProvider } from '@mantine/core'
+import { SideBar } from './ui/SideBar'
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
       </head>
       <body>
         <MantineProvider>
-          <div className="fixed top-0 left-0 h-full w-60 bg-blue-50"></div>
+          <SideBar />
           <main className="pl-60">
             <Outlet />
           </main>
