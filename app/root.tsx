@@ -13,12 +13,10 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className='bg-#f7f7f7'>
         <MantineProvider>
           <SideBar />
-          <main className="pl-60">
-            <Outlet />
-          </main>
+          <Outlet />
           <ScrollRestoration />
           <Scripts />
           <LiveReload />
