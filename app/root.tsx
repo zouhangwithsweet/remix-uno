@@ -1,7 +1,6 @@
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
-import '@mantine/core/styles.css'
 import { MantineProvider } from '@mantine/core'
 import { SideBar } from './ui/SideBar'
 
