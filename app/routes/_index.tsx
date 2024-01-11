@@ -9,16 +9,17 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
+    <div className="p-4">
+      <h1 className="font-bold">Welcome to Remix + Unocss + Fastify</h1>
       <ul>
         <li>
           <a
             target="_blank"
             href="https://remix.run/tutorials/blog"
             rel="noreferrer"
+            className="flex items-center underline-current underline hover:underline-dotted"
           >
-            15m Quickstart Blog Tutorial
+            <span className="w-5 h-5 inline-flex i-ri:bilibili-fill"></span>  15m Quickstart Blog Tutorial
           </a>
         </li>
         <li>
@@ -26,13 +27,14 @@ export default function Index() {
             target="_blank"
             href="https://remix.run/tutorials/jokes"
             rel="noreferrer"
+            className="flex items-center underline-current underline hover:underline-dotted"
           >
-            Deep Dive Jokes App Tutorial
+          <span className="w-5 h-5 inline-flex i-ri:youtube-fill"></span> Deep Dive Jokes App Tutorial
           </a>
         </li>
         <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
+          <a target="_blank" href="https://remix.run/docs" rel="noreferrer"  className="flex items-center underline-current underline hover:underline-dotted">
+          <span className="w-5 h-5 inline-flex i-ri:file-text-fill"></span>Remix Docs
           </a>
         </li>
       </ul>
