@@ -2,7 +2,7 @@
 FROM node:20
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /remix-app
 
 # Copy package.json and pnpm-lock.yaml to the working directory
 COPY package.json pnpm-lock.yaml tsconfig.json* .npmrc* ./
