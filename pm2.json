@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "remix-vite",
+      "script": "npm",
+      "args": "start"
+    }
+  ]
+}
